@@ -45,8 +45,8 @@ Player.prototype = {
 		}));
 		
 		// Flying animation
-		this.animArray["fly"] = this.addChild(new TGE.SpriteSheetAnimation().setup({
-	        image : "player_flying",
+		this.animArray["jump"] = this.addChild(new TGE.SpriteSheetAnimation().setup({
+	        image : "player_jump",
 	        rows : 1,
 	        columns : 4,
 	        totalFrames : 4,
@@ -68,7 +68,7 @@ Player.prototype = {
 	    // Add boost
 	    if (this.mGame.mousedown && this.mVerticalSpeed == 0) {
 	        this.mVerticalSpeed = 25;
-	        this.PlayAnimation("fly");
+	        this.PlayAnimation("jump");
 	    } 
 	    
 	    // Add gravity   
