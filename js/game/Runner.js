@@ -19,7 +19,7 @@ Runner = function()
         
         //Player pieces
         {id:'player_running',   		url:'player/player_running.png'},
-        {id:'player_flying', 			url:'player/player_flying.png'},
+        {id:'player_jump', 			    url:'player/player_jump.png'},
 
         // Backgrounds
         {id:'startscreen_background',   url:'screens/startscreen_background.jpg'},

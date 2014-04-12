@@ -385,7 +385,7 @@ GameScreen.prototype = {
 	
 	IncPlayerDistance : function(pixels) { this.mDistance += pixels / 100; },
 	GetPlayer : function() { return this.mPlayer; },
-	MouseDown : function() { this.mousedown = true; },
+	MouseDown : function(event) { this.mousedown = true; },
 	MouseUp : function() { this.mousedown = false; },
 
 }
