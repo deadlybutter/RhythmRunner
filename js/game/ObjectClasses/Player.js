@@ -2,7 +2,7 @@ Player = function() {
 	Player.superclass.constructor.call(this);
 	
 	// Player settings
-	this.mGroundHeight = 45;
+	this.mGroundHeight = 0;
 	this.mHorizontalSpeed = 0;
 	this.mVerticalSpeed = 0;
 	this.mFallSpeed = 0;
@@ -37,7 +37,7 @@ Player.prototype = {
 		this.animArray["run"] = this.addChild(new TGE.SpriteSheetAnimation().setup({
 			image : "player_running",
 			rows : 1,
-			columns : 4,
+			columns : 3,
 			totalFrames : 4,
 			fps : 24,
 			looping : true,
@@ -66,9 +66,9 @@ Player.prototype = {
 		if (this.mStopped) return;
 	
 	    // Add boost
-	    if (this.mGame.mousedown) {
-	        this.mVerticalSpeed = this.mBoostSpeed;
-	        this.PlayAnimation("fly");		        
+	    if (this.mGame.mousedown && this.mVerticalSpeed == 0) {
+	        this.mVerticalSpeed = 25;
+	        this.PlayAnimation("fly");
 	    } 
 	    
 	    // Add gravity   
