@@ -296,11 +296,11 @@ GameScreen.prototype = {
 		}));
 		
 		//Middle ground plane
-		/*this.artLayer.addChild(new TGE.ParallaxPane().setup({
+		this.artLayer.addChild(new TGE.ParallaxPane().setup({
 			image : "gamescreen_middleground",
 			worldY : 450,
 			trackingSpeed : 0.25 
-		}));*/
+		}));
 		//Scrolling ground plane
 		this.artLayer.addChild(new TGE.ParallaxPane().setup({
 			image : "gamescreen_ground",
