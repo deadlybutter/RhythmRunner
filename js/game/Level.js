@@ -2,17 +2,17 @@
 
 var level = [
 
-    {player_speed:0.01},
-    {fall_speed:0.003},
-    {boost_speed:0.01},
+    {player_speed:0.015},
+    {fall_speed:0.01},
+    {boost_speed:0.02},
 
     
     //Obstacles
     {begin_segment:"Some Obstacles"},
 
-   {time:0,     event:"obstacle_frequency",     value:700},
+   {time:0,     event:"obstacle_frequency",     value:600},
 
-   {time:0,     event:"obstacle_pattern",     value:"12A121B21"},
+   {time:0,     event:"obstacle_pattern",     value:"2A21B"},
 
    {time:12,    event:"end_segment"},
 
@@ -20,7 +20,7 @@ var level = [
     //Coins
     {begin_segment:"Coin Line"},
 
-    {time:0,     event:"coin_y",         value:0.75},
+    {time:0,     event:"coin_height",         value:0.55},
 
     {time:2,     event:"coin_frequency", value:200},
 
@@ -32,15 +32,15 @@ var level = [
 
     {time:0,     event:"obstacle_frequency",     value:1},
 
-    {time:0,     event:"obstacle_pattern",     value:"1"},
+    {time:1,     event:"obstacle_pattern",     value:"2A12B"},
 
-    {time:1,     event:"end_segment"},
+    {time:14,     event:"end_segment"},
 
 
     //Coin Boxes
     {begin_segment:"Coin Boxes"},
 
-    {time:0,     event:"coin_y",             value:0.5},
+    {time:0,     event:"coin_height",             value:0.5},
 
     {time:0,     event:"coin_frequency",     value:0},
 
@@ -48,17 +48,16 @@ var level = [
 
     {time:2,     event:"coin_box",          size:4},
 
-    {time: 6,    event:"end_segment"}, 
-
+    {time: 6,    event:"end_segment"},
 
     //Obstacle
     {begin_segment:"Some More Obstacles"},
 
-    {time:0,     event:"obstacle_frequency",     value:700},
+    {time:30,     event:"obstacle_frequency",     value:700},
 
-    {time:0,     event:"obstacle_pattern",     value:"12"},
+    {time:2,     event:"obstacle_pattern",     value:"2A12B"},
 
-    {time:3,     event:"end_segment"},
+    {time:36,     event:"end_segment"},
 
 
     //Coin Sinewave
@@ -80,7 +79,7 @@ var level = [
 
    {time:0,     event:"obstacle_frequency",     value:600},
 
-   {time:0,     event:"obstacle_pattern",     value:"12A121B21"},
+   {time:4,     event:"obstacle_pattern",     value:"2A21B"},
 
    {time:20,    event:"end_segment"},
 
