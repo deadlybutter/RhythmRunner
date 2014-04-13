@@ -53,9 +53,9 @@ var level = [
     //Obstacle
     {begin_segment:"Some More Obstacles"},
 
-    {time:30,     event:"obstacle_frequency",     value:700},
+    {time:30,     event:"obstacle_frequency",     value:300},
 
-    {time:2,     event:"obstacle_pattern",     value:"1A11A"},
+    {time:3,     event:"obstacle_pattern",     value:"1A11A"},
 
     {time:36,     event:"end_segment"},
 
