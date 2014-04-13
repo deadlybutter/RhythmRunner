@@ -2,9 +2,9 @@
 
 var level = [
 
-    {player_speed:0.015},
-    {fall_speed:0.01},
-    {boost_speed:0.02},
+    {player_speed:0.018},
+    {fall_speed:0.0025},
+    {boost_speed:0.025},
 
     
     //Obstacles
@@ -12,7 +12,7 @@ var level = [
 
    {time:0,     event:"obstacle_frequency",     value:600},
 
-   {time:0,     event:"obstacle_pattern",     value:"1A11A"},
+   {time:0,     event:"obstacle_pattern",     value:"2A21B"},
 
    {time:12,    event:"end_segment"},
 
@@ -32,7 +32,7 @@ var level = [
 
     {time:0,     event:"obstacle_frequency",     value:1},
 
-    {time:1,     event:"obstacle_pattern",     value:"1A11A"},
+    {time:1,     event:"obstacle_pattern",     value:"2A12B"},
 
     {time:14,     event:"end_segment"},
 
@@ -55,7 +55,7 @@ var level = [
 
     {time:30,     event:"obstacle_frequency",     value:700},
 
-    {time:2,     event:"obstacle_pattern",     value:"1A11A"},
+    {time:2,     event:"obstacle_pattern",     value:"2A12B"},
 
     {time:36,     event:"end_segment"},
 
@@ -79,7 +79,7 @@ var level = [
 
    {time:0,     event:"obstacle_frequency",     value:600},
 
-   {time:4,     event:"obstacle_pattern",     value:"1A11A"},
+   {time:4,     event:"obstacle_pattern",     value:"2A21B"},
 
    {time:20,    event:"end_segment"},
 
